@@ -7,7 +7,7 @@ env:
 jobs:
   test:
     name: test
-    os: macos-latest
+    runs-on: macos-latest
     steps:
       - name: Install Julia
         uses: julia-actions/setup-julia@v1
