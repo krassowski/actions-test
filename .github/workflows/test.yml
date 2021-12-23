@@ -14,6 +14,13 @@ jobs:
     name: test
     runs-on: macos-latest
     steps:
+      - name: Set up Python and mamba
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          python-version: 3.9
+          miniforge-variant: Mambaforge
+          use-mamba: true
+
       - name: Install Julia
         uses: julia-actions/setup-julia@v1
         with:
