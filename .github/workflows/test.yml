@@ -2,6 +2,10 @@ name: test
 on:
   workflow_dispatch:
 
+defaults:
+  run:
+    shell: bash -l {0}
+
 env:
   JULIA_LANGSERVER: 3.2.0
 jobs:
